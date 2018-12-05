@@ -64,19 +64,19 @@
                 <div class="col-1-of-2">
                     <div class="composition">
                         <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                               sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                               sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
                                alt="photo 1"
                                class="composition__photo composition__photo--p1"
                                src="img/nat-1-large.jpg">
 
                         <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
-                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
                                 alt="photo 2"
                                 class="composition__photo composition__photo--p2"
                                 src="img/nat-2-large.jpg">
 
                         <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
-                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px"
                                 alt="photo 3"
                                 class="composition__photo composition__photo--p3"
                                 src="img/nat-3-large.jpg">
@@ -244,12 +244,15 @@
             </div>
             <div class="row">
                 <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-8.jpg" alt="Person Vick" class="story__img">
+                    <picture class="story__shape">
+                        <source srcset="img/nat-8-sm.jpg 1x" media="(max-width: 37.5em)">
+                        <source srcset="img/nat-8.jpg 2x" media="(max-width: 56.25em)">
+
+                        <img srcset="img/nat-8-sm.jpg 1x, img/nat-8.jpg 2x" alt="Person Sergey" src="img/nat-8.jpg" class="story__img">
                         <figcaption class="story__caption">
-                            Victory Tret
+                            Sergey Tret
                         </figcaption>
-                    </figure>
+                    </picture>
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small ">I had a best week ever with my family</h3>
                         <p>
@@ -260,12 +263,16 @@
             </div>
             <div class="row">
                 <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/nat-9.jpg" alt="Person Sergey" class="story__img">
+
+                    <picture class="story__shape">
+                        <source srcset="img/nat-9-sm.jpg 1x" media="(max-width: 37.5em)">
+                        <source srcset="img/nat-9.jpg 2x" media="(max-width: 56.25em)">
+
+                        <img srcset="img/nat-9-sm.jpg 1x, img/nat-9.jpg 2x" alt="Person Sergey" src="img/nat-9.jpg" class="story__img">
                         <figcaption class="story__caption">
                             Sergey Tret
                         </figcaption>
-                    </figure>
+                    </picture>
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small ">WOW! I am happy!</h3>
                         <p>
