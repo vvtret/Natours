@@ -271,14 +271,12 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-    @supports (background-image: linear-gradient(to right bottom, #ffb900, #ff7730)) {
-      .card__picture--1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
-        background-image: url("../img/nat-5.jpg"); } }
+    .card__picture--1 {
+      background-image: url("../img/nat-5.jpg"), linear-gradient(to right bottom, #ffb900, #ff7730); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg"); }
+      background-image: url("../img/nat-6.jpg"), linear-gradient(to right bottom, #7ed56f, #28b485); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
+      background-image: url("../img/nat-7.jpg"), linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__heading {
     color: #fff;
     font-size: 2.8rem;
@@ -344,8 +342,8 @@ body {
         transform: rotateY(0deg); }
       .card__cta {
         position: relative;
-        top: 0%;
-        left: 0%;
+        top: 0;
+        left: 0;
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; }
@@ -383,7 +381,7 @@ body {
       top: 2rem; }
       @media (max-width: 56.25em) {
         .composition__photo--p2 {
-          top: 0rem;
+          top: 0;
           transform: scale(1.35); } }
     .composition__photo--p3 {
       left: 20%;
@@ -391,7 +389,7 @@ body {
       @media (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 2rem;
-          left: 0%;
+          left: 0;
           transform: scale(1.25); } }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
@@ -528,7 +526,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 75%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -632,12 +629,9 @@ body {
         transform: translateX(-3rem) skewX(0deg); } }
   .story__img {
     height: 100%;
-    -webkit-transform: skewX(12deg);
-    -ms-transform: skewX(12deg);
-    transform: skewX(12deg);
-    -webkit-transform: translateX(-4rem) scale(1.4);
-    -ms-transform: translateX(-4rem) scale(1.4);
-    transform: translateX(-4rem) scale(1.4);
+    -webkit-transform: translateX(-4rem) scale(1.4) skewX(12deg);
+    -ms-transform: translateX(-4rem) scale(1.4) skewX(12deg);
+    transform: translateX(-4rem) scale(1.4) skewX(12deg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: all .5s;

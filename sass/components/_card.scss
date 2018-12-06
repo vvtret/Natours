@@ -50,17 +50,13 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1{
-
-      @supports (background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)) {
-         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url("../img/nat-5.jpg");
-         background-image: url("../img/nat-5.jpg");
-      }
+      background-image: url("../img/nat-5.jpg"),linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     }
     &--2{
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url("../img/nat-6.jpg");
+      background-image: url("../img/nat-6.jpg"), linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
     }
     &--3{
-      background-image: linear-gradient(to right bottom, $color-tetriary-light, $color-tetriary-dark), url("../img/nat-7.jpg");
+      background-image: url("../img/nat-7.jpg"), linear-gradient(to right bottom, $color-tetriary-light, $color-tetriary-dark);
     }
 
   }
@@ -163,8 +159,8 @@
 
     &__cta {
       position: relative;
-      top: 0%;
-      left: 0%;
+      top: 0;
+      left: 0;
       transform: translate(0);
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
